@@ -9,9 +9,9 @@ namespace CrudInstrumento.Servicos
 
         public void Add(Instrumento instrumento)
         {
-            _instrumentoRepositorio = new InstrumentoRepositorio(); // Corrigido o nome da classe
+            _instrumentoRepositorio = new InstrumentoRepositorio(); 
             _instrumentoRepositorio.Add(instrumento);
-            Console.WriteLine("Instrumento inserido no sistema"); // Corrigido o texto
+            Console.WriteLine("Instrumento inserido no sistema"); 
         }
     }
 }

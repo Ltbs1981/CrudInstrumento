@@ -1,9 +1,8 @@
-﻿using CrudInstrumento.Servicos;
-using CrudInstrumento.Core.Entidades;
-using System.Runtime.CompilerServices;
+﻿using CrudInstrumento.Core.Entidades;
+using CrudInstrumento.Servicos;
 namespace CrudInstrumento.InstrumentoControllers
 {
-    internal class strumentoController
+    internal class InstrumentoController
     {
         private InstrumentoService _instrumentoService;
         public void InserirInstrumento(string nome)
