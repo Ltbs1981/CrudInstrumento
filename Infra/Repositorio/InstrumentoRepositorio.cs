@@ -11,5 +11,9 @@ namespace CrudInstrumento.Infra.Repositorio
             instrumento.Id = id++;
             instrumentos.Add(instrumento);
         }
+        public List<Instrumento> GetAll()
+        {
+            return instrumentos;
+        }
     }
 }

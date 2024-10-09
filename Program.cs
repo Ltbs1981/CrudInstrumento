@@ -8,3 +8,4 @@ instrumentoController.InserirInstrumento("Guitarra");
 instrumentoController.InserirInstrumento("Violão");
 instrumentoController.InserirInstrumento("Piano");
 Console.WriteLine("Instrumentos Inseridos");
+instrumentoController.ListarInstrumentos();

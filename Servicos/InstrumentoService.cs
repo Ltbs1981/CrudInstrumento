@@ -13,5 +13,9 @@ namespace CrudInstrumento.Servicos
             _instrumentoRepositorio.Add(instrumento);
             Console.WriteLine("Instrumento inserido no sistema"); 
         }
+        public List <Instrumento> GetAll()
+        {
+            return _instrumentoRepositorio.GetAll();
+        }
     }
 }

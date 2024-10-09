@@ -14,5 +14,13 @@ namespace CrudInstrumento.InstrumentoControllers
             _instrumentoService = new InstrumentoService();
             _instrumentoService.Add(instrumento);
         }
+        public void ListarInstrumentos()
+        {
+            var instrumentos = _instrumentoService.GetAll();
+            foreach (var instrumento in instrumentos)
+            {
+                Console.WriteLine($"Lista de Instrumentos\n\t {instrumento.Id}\t\t{instrumento.Nome}");
+            }
+        }
     }
 }
