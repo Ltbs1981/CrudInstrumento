@@ -17,5 +17,13 @@ namespace CrudInstrumento.Servicos
         {
             return _instrumentoRepositorio.GetAll();
         }
+        public void EditarInstrumento(int id, string novoNome)
+        {
+            _instrumentoRepositorio = new InstrumentoRepositorio();
+            var instrumento = _instrumentoRepositorio.GetAll().FirstOrDefault(i => i.Id == id);
+            instrumento.Nome = novoNome;
+            _instrumentoRepositorio.Update(instrumento);
+            Console.WriteLine("Item atualizado");
+        }
     }
 }

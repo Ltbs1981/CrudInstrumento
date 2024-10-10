@@ -9,3 +9,7 @@ instrumentoController.InserirInstrumento("Violão");
 instrumentoController.InserirInstrumento("Piano");
 Console.WriteLine("Instrumentos Inseridos");
 instrumentoController.ListarInstrumentos();
+
+instrumentoController.EditarInstrumento(1, "Teclado");
+
+instrumentoController.ListarInstrumentos();

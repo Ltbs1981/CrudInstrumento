@@ -22,5 +22,10 @@ namespace CrudInstrumento.InstrumentoControllers
                 Console.WriteLine($"Lista de Instrumentos\n\t {instrumento.Id}\t\t{instrumento.Nome}");
             }
         }
+        public void EditarInstrumento(int id, string novoNome)
+        {
+            _instrumentoService = new InstrumentoService();
+            _instrumentoService.EditarInstrumento(id, novoNome);
+        }
     }
 }

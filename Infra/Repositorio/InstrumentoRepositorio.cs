@@ -15,5 +15,9 @@ namespace CrudInstrumento.Infra.Repositorio
         {
             return instrumentos;
         }
-    }
+        public void Update(Instrumento instrumento)
+        {
+            Instrumento banco = instrumentos.FirstOrDefault(i => i.Id == instrumento.Id);
+                }
+        }
 }
