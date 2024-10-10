@@ -18,6 +18,10 @@ namespace CrudInstrumento.Infra.Repositorio
         public void Update(Instrumento instrumento)
         {
             Instrumento banco = instrumentos.FirstOrDefault(i => i.Id == instrumento.Id);
-                }
         }
+        public void Delete(Instrumento instrumento)
+        {
+            instrumentos.Remove(instrumento);
+        }
+    }
 }

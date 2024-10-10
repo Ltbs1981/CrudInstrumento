@@ -27,5 +27,10 @@ namespace CrudInstrumento.InstrumentoControllers
             _instrumentoService = new InstrumentoService();
             _instrumentoService.EditarInstrumento(id, novoNome);
         }
+        public void DeletarInstrumento(int id)
+        {
+            _instrumentoService = new InstrumentoService();
+            _instrumentoService.Delete(id);
+        }
     }
 }

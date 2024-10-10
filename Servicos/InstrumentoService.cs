@@ -9,11 +9,11 @@ namespace CrudInstrumento.Servicos
 
         public void Add(Instrumento instrumento)
         {
-            _instrumentoRepositorio = new InstrumentoRepositorio(); 
+            _instrumentoRepositorio = new InstrumentoRepositorio();
             _instrumentoRepositorio.Add(instrumento);
-            Console.WriteLine("Instrumento inserido no sistema"); 
+            Console.WriteLine("Instrumento inserido no sistema");
         }
-        public List <Instrumento> GetAll()
+        public List<Instrumento> GetAll()
         {
             return _instrumentoRepositorio.GetAll();
         }
@@ -24,6 +24,13 @@ namespace CrudInstrumento.Servicos
             instrumento.Nome = novoNome;
             _instrumentoRepositorio.Update(instrumento);
             Console.WriteLine("Item atualizado");
+        }
+        public void Delete(int id)
+        {
+            _instrumentoRepositorio = new InstrumentoRepositorio();
+            var instrumento = _instrumentoRepositorio.GetAll().FirstOrDefault(i => i.Id == id);
+            _instrumentoRepositorio.Delete(instrumento);
+            Console.WriteLine("Item removido");
         }
     }
 }

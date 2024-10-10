@@ -13,3 +13,7 @@ instrumentoController.ListarInstrumentos();
 instrumentoController.EditarInstrumento(1, "Teclado");
 
 instrumentoController.ListarInstrumentos();
+
+instrumentoController.DeletarInstrumento(2);
+
+instrumentoController.ListarInstrumentos();
